@@ -178,7 +178,7 @@ p {
   border: 1px solid #1a1a57;
   margin-top: 25px;
   font-weight: 700;
-  color: #2d5649;
+  color: #1a1a57;
   font-size: 1.2rem;
   text-decoration: none;
   border-radius: 7px;
@@ -218,7 +218,7 @@ p {
 }
 
 .footerShow {
-  background: #18191c;
+  background: #0c0c34;
   display: flex;
   justify-content: space-between;
   padding: 25px 120px;
@@ -236,7 +236,7 @@ p {
   color: #f1f3f6;
 }
 .footerShow div a:hover {
-  color: #2d5649;
+  color: #1a1a57;
   transform: scale(1.2);
   transition: all 0.3s;
 }
@@ -266,8 +266,7 @@ p {
 }
 .heroSection .container,
 .heroSection .details {
-  min-width: 1500px;
-  max-width: 1500px;
+  max-width: 100%;
   margin: 0 auto;
 }
 .heroSection .container {
@@ -308,7 +307,7 @@ p {
   gap: 20px;
   align-items: center;
   background: #f1f3f6;
-  width: 220px;
+  width: 200px;
   padding: 10px 20px;
 }
 .heroSection .details .card .icon {
@@ -318,7 +317,7 @@ p {
   align-items: center;
   justify-content: center;
   padding: 10px;
-  color: #2d5649;
+  color: #1a1a57;
 }
 .heroSection .details .card .content p:first-child {
   font-weight: bold;
@@ -417,13 +416,19 @@ p {
   gap: 12px;
   justify-content: center;
 }
+.howitworks .container .banner .card:hover  {
+  transition: all 0.3s;
+  box-shadow: 2px 10px 10px -1px rgba(0, 0, 0, 0.17);
+  -webkit-box-shadow: 2px 10px 10px -1px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 2px 10px 10px -1px rgba(0, 0, 0, 0.17);
+}
 .howitworks .container .banner .card:nth-child(2) {
-  background: #18191c;
-  color: #fff;
+  background: #fff;
+  color: #1a1a57;
 }
 .howitworks .container .banner .card svg {
   font-size: 30px;
-  color: #2d5649;
+  color: #1a1a57;
 }
 .howitworks .container .banner .card p:last-child {
   font-size: 14px;
@@ -465,7 +470,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 35px;
+  gap: 30px;
   padding: 20px 0;
 }
 .categories .banner .card {
@@ -487,7 +492,7 @@ p {
   font-size: 24px;
   padding: 10px;
   background: rgb(233, 249, 255);
-  color: #2d5649;
+  color: #1a1a57;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -562,7 +567,7 @@ p {
 .companies .container .banner .card .content .icon {
   padding: 10px;
   font-size: 24px;
-  color: #2d5649;
+  color: #1a1a57;
   background: rgb(233, 249, 255);
   display: flex;
   justify-content: center;
@@ -577,7 +582,7 @@ p {
   color: gray;
 }
 .companies .container .banner .card button {
-  color: #2d5649;
+  color: #1a1a57;
   background: rgb(233, 249, 255);
   font-weight: bold;
   font-size: 20px;
@@ -661,7 +666,7 @@ p {
   text-decoration: none;
   padding: 7px;
   font-size: 20px;
-  color: #2d5649;
+  color: #1a1a57;
   background: rgb(233, 249, 255);
   width: 100%;
   display: block;
@@ -706,14 +711,14 @@ p {
 }
 .jobDetail .container .banner p {
   font-weight: bold;
-  color: #2d5649;
+  color:#1a1a57;
 }
 .jobDetail .container .banner p span {
-  color: #18191c;
+  color: #1a1a57;
   font-weight: 400;
 }
 .jobDetail .container .banner a {
-  background-color: #2d5649;
+  background-color: #1a1a57;
   color: rgb(233, 249, 255);
   font-size: 20px;
   font-weight: 400;
@@ -767,7 +772,7 @@ p {
   outline: none;
 }
 .application .container form button {
-  background-color: #2d5649;
+  background-color: #1a1a57;
   color: rgb(233, 249, 255);
   font-size: 20px;
   font-weight: 400;
@@ -777,7 +782,7 @@ p {
   width: 100%;
 }
 .application .container form button:hover {
-  background-color: #184235;
+  background-color: #1a1a57;
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -965,7 +970,7 @@ p {
 }
 .job_post .container form button {
   width: 100%;
-  background: #2d5649;
+  background: #1a1a57;
   font-size: 20px;
   padding: 10px 30px;
   border: none;
@@ -1018,7 +1023,7 @@ p {
   width: 100%;
   display: flex;
   gap: 20px;
-  border-bottom: 1px solid #18191c;
+  border-bottom: 1px solid #1a1a57;
   padding: 10px 0;
 }
 .myJobs .container .banner .card .content {
@@ -1036,7 +1041,7 @@ p {
   background: transparent;
   font-size: 16px;
   border: none;
-  color: #18191c;
+  color: #1a1a57;
   padding: 7px 4px;
 }
 .myJobs .container .banner .card .content input:enabled,
@@ -1073,7 +1078,7 @@ p {
 .myJobs .container .banner .card .content .long_field textarea {
   background: transparent;
   font-size: 16px;
-  color: #18191c;
+  color: #1a1a57;
   border: none;
   padding: 7px 4px;
   height: fit-content;
@@ -1099,7 +1104,7 @@ p {
 .myJobs .container .banner .card .button_wrapper .edit_btn,
 .myJobs .container .banner .card .button_wrapper .delete_btn {
   width: 120px;
-  color: #18191c;
+  color: #1a1a57;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
@@ -1113,8 +1118,8 @@ p {
 }
 .myJobs .container .banner .card .button_wrapper .check_btn {
   background: transparent;
-  color: #184235;
-  border: 1px solid #184235;
+  color: #1a1a57;
+  border: 1px solid #1a1a57;
   border-radius: 7px;
   width: 50px;
   padding: 8px;
@@ -1125,7 +1130,7 @@ p {
 }
 .myJobs .container .banner .card .button_wrapper .check_btn:hover {
   transition: all 0.3s;
-  background: #184235;
+  background: #1a1a57;
   color: #f1f3f6;
 }
 .myJobs .container .banner .card .button_wrapper .cross_btn {
@@ -1171,7 +1176,7 @@ p {
   }
 }
 nav {
-  background: #18191c;
+  background: #0c0c34;
   padding: 0 20px;
 }
 nav .container {
@@ -1205,11 +1210,11 @@ nav .menu button {
 }
 nav .menu button:hover {
   color: #f1f3f6;
-  background: #184235;
+  background: #1a1a57;
   transition: all 0.3s;
   cursor: pointer;
   font-weight: 500;
-  border: 1px solid #184235;
+  border: 1px solid #1a1a57;
 }
 nav .menu li a {
   color: #f1f3f6;
@@ -1219,13 +1224,13 @@ nav .menu li a {
   position: relative;
 }
 nav .menu li a:hover {
-  color: #2d5649;
+  color: #7e7e9b;
   transition: all 0.3s;
 }
 nav .menu li a::before {
   content: "";
   position: absolute;
-  background: #184235;
+  background: #1a1a57;
   height: 1px;
   width: 100%;
   left: -100%;
@@ -1295,16 +1300,16 @@ nav .hamburger {
     -moz-box-shadow: 9px 0px 16px 0px rgba(0, 0, 0, 0.75);
   }
   nav .show-menu li a {
-    color: #184235;
+    color: #1a1a57;
     font-weight: 600;
   }
   nav .show-menu button {
-    color: #184235;
-    border: 1px solid #184235;
+    color: #1a1a57;
+    border: 1px solid #1a1a57;
     font-weight: 600;
   }
   nav .show-menu button:hover {
-    background: #18191c;
+    background: #1a1a57;
     color: #f1f3f6;
   }
 }
@@ -1326,19 +1331,19 @@ nav .hamburger {
   font-weight: 500;
   padding: 7px 30px;
   background: transparent;
-  border: 1px solid #184235;
-  color: #184235;
+  border: 1px solid #1a1a57;
+  color: #1a1a57;
   text-decoration: none;
 }
 .notfound .content a:hover {
-  background: #184235;
+  background: #1a1a57;
   transition: all 0.3s;
   color: #f1f3f6;
 }
 .resume-modal {
   width: 100%;
   display: flex;
-  background: #00000085;
+  background: #1a1a57;
   height: 100%;
   position: fixed;
   top: 0;
