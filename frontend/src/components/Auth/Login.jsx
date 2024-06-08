@@ -37,8 +37,8 @@ const Login = () => {
     }
   };
 
-  if(isAuthorized){
-    return <Navigate to={'/'}/>
+  if (isAuthorized) {
+    return <Navigate to={"/"} />;
   }
 
   return (
@@ -46,14 +46,19 @@ const Login = () => {
       <section className="authPage">
         <div className="container">
           <div className="header">
-            <img src="/JobZeelogo.png" alt="logo" />
+            {/* Change image source and style to increase size */}
+            <img src="/JobZeelogo.png" alt="logo" style={{ height: "230px" }} />
+
             <h3>Login to your account</h3>
           </div>
           <form>
             <div className="inputTag">
               <label>Login As</label>
               <div>
-                <select value={role} onChange={(e) => setRole(e.target.value)}>
+                <select
+                  value={role}
+                  onChange={(e) => setRole(e.target.value)}
+                >
                   <option value="">Select Role</option>
                   <option value="Employer">Employer</option>
                   <option value="Job Seeker">Job Seeker</option>
@@ -90,9 +95,6 @@ const Login = () => {
             </button>
             <Link to={"/register"}>Register Now</Link>
           </form>
-        </div>
-        <div className="banner">
-          <img src="/login.png" alt="login" />
         </div>
       </section>
     </>

@@ -43,14 +43,15 @@ const Register = () => {
     }
   };
 
-  if(isAuthorized){
+  if (isAuthorized) {
     return <Navigate to={'/'}/>
   }
-
 
   return (
     <>
       <section className="authPage">
+      <div id="hex-grid" className="grid"></div>
+      <div id="hex-grid" className="light"></div>
         <div className="container">
           <div className="header">
             <img src="/JobZeelogo.png" alt="logo" />
@@ -122,9 +123,9 @@ const Register = () => {
             <Link to={"/login"}>Login Now</Link>
           </form>
         </div>
-        <div className="banner">
-          <img src="/register.png" alt="login" />
-        </div>
+<div className="banner">
+{/* Remove the image */}
+</div>
       </section>
     </>
   );
