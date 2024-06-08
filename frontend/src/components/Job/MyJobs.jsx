@@ -192,6 +192,9 @@ const MyJobs = () => {
                             <option value="Data Entry Operator">
                               Data Entry Operator
                             </option>
+                            <option value="AI Engineeer">
+                              AI Engineer
+                            </option>
                           </select>
                         </div>
                         <div>

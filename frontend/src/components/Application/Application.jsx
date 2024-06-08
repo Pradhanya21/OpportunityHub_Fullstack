@@ -3,9 +3,6 @@ import React, { useContext, useState } from "react";
 import toast from "react-hot-toast";
 import { useNavigate, useParams } from "react-router-dom";
 import { Context } from "../../main";
-
-import { Button, TextField, TextareaAutosize } from '@mui/material'; // Import Material-UI components
-
 const Application = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,8 +12,8 @@ const Application = () => {
   const [resume, setResume] = useState(null);
 
   const { isAuthorized, user } = useContext(Context);
+
   const navigateTo = useNavigate();
-  const { id } = useParams();
 
   // Function to handle file input changes
   const handleFileChange = (event) => {
@@ -24,6 +21,7 @@ const Application = () => {
     setResume(resume);
   };
 
+  const { id } = useParams();
   const handleApplication = async (e) => {
     e.preventDefault();
     const formData = new FormData();
@@ -43,7 +41,7 @@ const Application = () => {
           withCredentials: true,
           headers: {
             "Content-Type": "multipart/form-data",
-          }
+          },
         }
       );
       setName("");
@@ -51,7 +49,7 @@ const Application = () => {
       setCoverLetter("");
       setPhone("");
       setAddress("");
-      setResume(null);
+      setResume("");
       toast.success(data.message);
       navigateTo("/job/getall");
     } catch (error) {
@@ -68,59 +66,49 @@ const Application = () => {
       <div className="container">
         <h3>Application Form</h3>
         <form onSubmit={handleApplication}>
-          <TextField
+          <input
             type="text"
-            label="Your Name"
+            placeholder="Your Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            fullWidth
-            margin="normal"
           />
-          <TextField
+          <input
             type="email"
-            label="Your Email"
+            placeholder="Your Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            fullWidth
-            margin="normal"
           />
-          <TextField
+          <input
             type="number"
-            label="Your Phone Number"
+            placeholder="Your Phone Number"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            fullWidth
-            margin="normal"
           />
-          <TextField
+          <input
             type="text"
-            label="Your Address"
+            placeholder="Your Address"
             value={address}
             onChange={(e) => setAddress(e.target.value)}
-            fullWidth
-            margin="normal"
           />
-          <TextareaAutosize
-            minRows={4}
-            placeholder="Cover Letter..."
+          <textarea
+            placeholder="CoverLetter..."
             value={coverLetter}
             onChange={(e) => setCoverLetter(e.target.value)}
-            style={{ width: '100%', marginTop: '16px', padding: '8px' }}
           />
-          <div className="file-input">
-            <label className="file-label">
+          <div>
+            <label
+              style={{ textAlign: "start", display: "block", fontSize: "20px" }}
+            >
               Select Resume
             </label>
             <input
               type="file"
               accept=".pdf, .jpg, .png"
               onChange={handleFileChange}
-              className="file-input-field"
+              style={{ width: "100%" }}
             />
           </div>
-          <Button variant="contained" color="primary" type="submit" className="submit-button">
-            Send Application
-          </Button>
+          <button type="submit">Send Application</button>
         </form>
       </div>
     </section>
