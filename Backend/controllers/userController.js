@@ -45,6 +45,7 @@ export const login = catchAsyncErrors(async (req, res, next) => {
 });
 
 export const logout = catchAsyncErrors(async (req, res, next) => {
+  console.log("Logout endpoint hit");
   res
     .status(201)
     .cookie("token", "", {
