@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { RiLock2Fill } from "react-icons/ri";
@@ -16,8 +16,8 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("");
 
-  const { isAuthorized, setIsAuthorized, user, setUser } = useContext(Context);
-
+  const { isAuthorized, setIsAuthorized} = useContext(Context);
+//user, setUser
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
