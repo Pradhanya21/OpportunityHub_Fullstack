@@ -22,7 +22,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/user/register",
+        "https://oppurtunity-hub-backend-deploy.onrender.com/api/v1/user/register",
         { name, phone, email, role, password },
         {
           headers: {
@@ -74,7 +74,7 @@ const Register = () => {
               <div>
                 <input
                   type="text"
-                  placeholder="Zeeshan"
+                  placeholder="Enter Your Name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                 />
