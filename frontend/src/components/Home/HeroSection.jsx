@@ -35,9 +35,7 @@ const HeroSection = () => {
           <div className="title">
             <h1>Find a job that suits your interests and skills</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              voluptate repellat modi quidem aliquid eaque ducimus ipsa et,
-              facere mollitia!
+            Opportunity Hub is a premier web development project designed to revolutionize the job market by serving as a dynamic and interactive platform for job seekers and employers. This innovative portal aims to bridge the gap between talent and opportunity, creating a seamless experience for both parties.
             </p>
           </div>
           <div className="image">

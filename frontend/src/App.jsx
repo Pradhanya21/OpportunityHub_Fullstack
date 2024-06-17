@@ -23,7 +23,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://oppurtunity-hub-backend-deploy.onrender.com/api/v1/user/getuser",
+          "http://localhost:4000/api/v1/user/getuser",
           {
             withCredentials: true,
           }
